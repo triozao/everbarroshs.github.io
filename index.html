@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbearia Ever Barros</title>
+  <script src="https://kit.fontawesome.com/cb26bc2937.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="background">
+  <div id= 'top'>
+    <!-- DIV PRA CASO PRECISE COLOCAR ALGO ENTRE O BACKGROUND E AS SECTIONS-->
+    <div id="voltarTopo">
+      <a href="#top" id="subir">↑↑↑</a>
+    </div>
+    <!--MUDEI O MENU HAMBURGUER DE POSIÇÃO, COLOQUEI A DIREITA E COM OS LINKS EM BAIXO DELE-->
+    <header >
+      
+      <button type="button" class="botao-menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <img src="../SITE EVER/assets/EverBarros_Logos-07.png" alt="" class="miniLogo">
+    </a>
+      <nav class="menu">
+        <ul id='teste1'>
+          <li>
+            <a href="index.html" class="linkElement"> HOME</a>
+          </li>
+          <li>
+            <a class="linkElement" href="#ponto1"> SEU ESTILO</a>
+          </li>
+          <li><a class="linkElement" href="#ponto2">MINHA HISTÓRIA</a></li>
+          <li>
+            <a class="linkElement" href="#ponto3"> AGENDE CONOSCO</a>
+          </li>
+          <li>
+            <a class="linkElement" href="#ponto4"> CONTATO </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="AreaTop">
+      <img src="../SITE EVER/assets/EverBarros_Logos-06.png" alt="" class="logo" />
+      <!-- PRA CONSEGUIR VER, USA AS IMAGENS NO DRIVE -->
+    </div>
+    <section class="avisoComputador">
+      <p> VERSÃO DESKTOP EM CONSTRUÇÃO, UTILIZE A VERSÃO MOBILE (v1.0)</p>
+      </section>
+    <section id="ponto1">
+      <h2 class="seuEstilo">- SEU ESTILO -</h2>
+      <img src="../SITE EVER/assets/289-2897514_beard-and-mustache-png.png" alt="" id='imgEver'>
+      <img src="../SITE EVER/assets/289-2897514_beard-and-mustache-png.png" alt="" id='imgEver'>
+      <img src="../SITE EVER/assets/289-2897514_beard-and-mustache-png.png" alt="" id='imgEver'>
+    </section>
+
+    <section id="ponto2">
+      <img src="../SITE EVER/assets/everJPEG.png" alt="" id='imgEver'>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+        est sapiente modi sit a doloribus quaerat fuga explicabo tempora autem
+        quibusdam id porro odit incidunt esse, sequi corrupti cumque eaque!
+      </p>
+    </section>
+    <section id="ponto3">
+      <img src="./Whatsapp_Artboard 1.png" class="imgAgenda" alt="">
+      <a href="https://www.instagram.com/everbarroshs/"><i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/everbarroshairstylist/"><i class="fab fa-facebook-square"></i>
+      </a>
+    </section>
+    <section id="ponto4">
+      <!-- modify this form HTML and place wherever you want your form -->
+    <div class="formElements">
+      <p class="contato"> CONTATO</p>
+      <form action="https://formspree.io/mjvpbgag" method="POST">
+        
+        <label>
+          <input type="text" class="input1" name="_replyto" placeholder="Digite aqui seu e-mail">
+        </label>
+        <br>
+        <label>
+
+          <textarea name="message" class='input2' placeholder="Digite aqui sua mensagem"></textarea>
+        </label>
+        <br>
+
+        <!-- your other form fields go here -->
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+
+
+    </section>
+    <footer class="rodap">
+      <p>
+        Desenvolvido por Richard Totolo e Julio Ferro
+      </p>
+    </footer>
+  </div>
+</body>
+
+<style>
+  * {
+    margin: 0px;
+    scroll-behavior: smooth;
+  }
+
+  /* Arrumei o background pra não rolar junto com a página */
+  .background {
+    background-image: url(./Background01.jpg);
+    background-repeat: no-repeat;
+    background-position: -190px;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  #subir{
+	position:fixed;
+	bottom:5px;
+	right:5px;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #E3E3E3;
+}
+
+  header {
+    text-align: left;
+    background-color: black;
+    opacity: .9;
+    height: 50px;
+    position: fixed;
+    width: 600px;
+  }
+
+  .avisoComputador {
+    display: none;
+  }
+
+  .miniLogo {
+    margin-left: 200px;
+    width: 130px;
+    height: 100px;
+    position: fixed;
+    margin-top: -25px;
+  }
+
+  .AreaTop {
+    text-align: center;
+
+  }
+
+  .logo {
+    width: 370px;
+    height: 350px;
+    margin-top: 140px;
+  }
+
+  .menu {
+    font-family: "Dosis", sans-serif;
+    background-color: rgb(24, 24, 24);
+    height: 250px;
+    opacity: 0.8;
+    text-align: left;
+    display: none;
+
+  }
+
+  .menu ul {
+    list-style: none;
+    text-align: left;
+    margin: 0;
+
+  }
+
+  .menu li {
+    display: block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: rgb(112, 112, 112) solid 1px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 1px rgb(31, 31, 31);
+    font-size: 1em;
+  }
+
+  .menu a:hover {
+    color: rgb(112, 109, 109);
+  }
+
+  .botao-menu {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+    text-align: left;
+    margin: 10px;
+  }
+
+  .botao-menu:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color; 
+    outline-offset: 0px;
+  }
+
+  #ponto1 {
+    background-color: black;
+    opacity: 0.9;
+    height: 800px;
+    margin-top: 250px;
+    margin-bottom: 450px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 15px;
+  }
+
+  .seuEstilo{
+    color: white;
+    font-family: "Poiret One", sans-serif;
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: 50px;
+  }
+
+  #ponto2 {
+    background-color: black;
+    opacity: 0.9;
+    height: 600px;
+    margin-bottom: 450px;
+    margin-top: 250px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  #imgEver{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    margin: 10px;
+  }
+
+  #ponto2 p {
+    color: rgb(165, 164, 164);
+    padding: 50px;
+    font-size: 1.3em;
+    border-bottom: solid gray 1px;
+    border-top: solid gray 1px;
+
+  }
+
+  #ponto3 {
+    background-color: rgba(255, 255, 255, 0.397);
+    height: 655px;
+    padding-top: 15px;
+    margin-bottom: 250px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  #ponto3 a {
+    color: inherit;
+    color: white;
+  }
+
+  .imgAgenda {
+    height: 600px;
+    width: 370px;
+  }
+
+  .fa-instagram {
+    color: rgb(29, 29, 29);
+    font-size: 3em;
+  }
+
+  .fa-facebook-square {
+    color: rgb(26, 0, 0);
+    font-size: 3em;
+  }
+
+  #ponto4 {
+    background-color: black;
+    opacity: 0.9;
+    height: 500px;
+    margin-top: 150px;
+    margin-bottom: 450px;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .contato{
+    color: white;
+    font-family: "Poiret One", sans-serif;
+    margin:20px;
+    font-size: 1.5em;
+    border-bottom: thin white ;
+  }
+
+  .formElements{
+    margin-top: 150px;
+    text-align: center;
+    padding-top: 70px;    
+  }
+
+  .input1{
+    height: 60px;
+    width: 350px;
+    margin: 10px;
+    font-size: 1.2em;
+    font-family: "Dosis", sans-serif;
+  }
+
+  .input2{
+    height: 80px;
+    width: 350px;
+    margin: 10px;
+    font-size: 1.2em;
+    font-family: "Dosis", sans-serif;
+  }
+
+  .btn{
+    margin-top: 20px;
+    border-style: none;
+    background-color: rgb(107, 60, 7);
+    height: 40px;
+    width: 350px;
+    font-size: 1.2em;
+    color: rgb(228, 228, 228);
+    font-weight: bold;
+    font-family: "Dosis", sans-serif;
+    animation: forwards;
+  }
+
+  .rodap {
+    opacity: 0.8;
+    height: 50px;
+    text-align: right;
+  }
+
+  /* MUDEI A FONTE DO RODAP */
+  .rodap p {
+    background-color: rgb(107, 60, 7);
+    color: rgb(228, 228, 228);
+    padding: 20px;
+    margin-top: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.6em;
+  }
+
+
+  @media(min-width: 451px) {
+    * {
+      position: relative;
+
+    }
+
+    header{
+      background-color: rgb(10, 10, 10)  ;
+      width: 100%;
+    }
+
+    .background {
+      background-image: none;
+      background-color: black;
+    }
+  
+    #subir{
+      display: none;
+    }
+    .botao-menu{
+      display: none;
+    }
+    .miniLogo {
+      display: none;
+    }
+    #ponto1 {
+      display: none;
+    }
+
+    #ponto2 {
+      display: none;
+    }
+
+    #ponto3 {
+      display: none;
+    }
+
+    #ponto4 {
+      display: none;
+    }
+
+    .rodap {
+      display: none;
+    }
+
+    .avisoComputador {
+      display: block;
+      color: rgb(141, 141, 141);
+      text-shadow: 1px 1px 1px rgb(31, 31, 31);
+      text-align: center;
+      font-size: 1.8em;
+      margin: 30px;
+      background-color: rgba(46, 46, 46, 0.411);
+      padding: 50px;
+      font-family: monospace;
+      border-radius: 100px;
+    }
+
+    
+
+  }
+</style>
+
+<script>
+  var btnElement = document.querySelector('.botao-menu');
+  var x = document.querySelector(".menu");
+  var linkiElement = document.getElementById('teste1');
+  function openMenu() { 
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+    
+  }
+
+  function closeMenu(){
+  
+    x.style.display = "none";
+  }
+
+  	btnElement.onclick = openMenu;
+    linkiElement.onclick = closeMenu;
+
+        
+
+ 
+</script>
+
+</html>
